@@ -15,6 +15,7 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   ipcMain.handle('ping', () => 'pong')
+  console.log("GITHUB_TOKEN:", process.env.GITHUB_TOKEN);
   createWindow()
 
   app.on('activate', () => {
