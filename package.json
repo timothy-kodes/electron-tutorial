@@ -1,12 +1,12 @@
 {
   "name": "electron-tutorial",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "author": "Timothy Kodes <mail@timothykodes.com> (https://www.timothykodes.com/)",
   "license": "MIT",
@@ -19,7 +19,9 @@
     "@electron-forge/maker-zip": "^7.7.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.7.0",
     "@electron-forge/plugin-fuses": "^7.7.0",
+    "@electron-forge/publisher-github": "^7.7.0",
     "@electron/fuses": "^1.8.0",
+    "dotenv": "^16.4.7",
     "electron": "^35.0.1"
   },
   "dependencies": {
